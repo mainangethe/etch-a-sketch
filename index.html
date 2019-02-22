@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Etch A Sketch</title>
+  </head>
+  <body>
+    <header>
+      <h1>Etch-A-Sketch</h1>
+      <p>This game allows you to draw on the screen anything you want.</p>
+    </header>
+
+
+    <div class="shell">
+
+      <div class="left-controls">
+        <div class="pixel-selector">
+          <p>Select your desired Screen pixel size:</p>
+          <input type="range" id="screen-pixel" class="range-slider" min="16" max="64" value="16">
+        </div>
+      </div>
+
+      <div class="screen">
+        <div class="grid-container">
+          <div class="grid"></div>
+        </div>
+        <div class="logo"><p>OXY</p></div>
+      </div>
+
+      <div class="right-controls">
+          <div class="eraser-container">
+            <p>Clear Screen:</p>
+            <button id="screen-eraser"></button>
+          </div>
+
+          <div class="color-selector-container">
+            <p>Multi-colours</p>
+            <label for="color-picker" class="switch">
+              <input type="checkbox" id='color-picker'>
+              <span class="slider round"></span>
+            </label>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
