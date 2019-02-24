@@ -34,10 +34,18 @@ header p { font-size: 16px; }
 .grid-container {
   width: 480px; height: 300px;
   background-color: hsl(132, 11%, 64%);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
   position: relative;
-  left: 50%; transform: translateX(-50%);
   top: 10px;
+  left: 10px;
+  overflow: hidden;
+
 }
+
+
 .logo {
   position: absolute;
   left: 50%; transform: translateX(-50%);
@@ -189,4 +197,10 @@ input:checked + .slider:before {
 }
 .slider.round:before {
   border-radius: 50%;
+}
+
+.grid-container > div {
+
+  border: .05px hsl(243,100%,13%) solid;
+  flex: 1 1 auto;
 }
