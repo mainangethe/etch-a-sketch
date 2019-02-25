@@ -205,12 +205,9 @@ input:checked + .slider:before {
 }
 
 .grid-container > div {
-  border: .02px hsl(243,100%,13%) solid;
-  
+  border: .02px hsla(243,100%,13%,0.02) solid;
   flex: 1 1 auto;
 }
 .trail {
-
-  border: none;
   background-color: hsl(180, 100%, 25%);
 }
