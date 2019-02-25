@@ -112,6 +112,11 @@ header p { font-size: 16px; }
   cursor: pointer;
 }
 
+#pixel-output {
+  top: 150px;
+  left: 0;
+}
+
 /* Right Controls */
 .right-controls {
   width: 180px; height: 300px;
@@ -200,7 +205,7 @@ input:checked + .slider:before {
 }
 
 .grid-container > div {
-
-  border: .05px hsl(243,100%,13%) solid;
+  border: .02px hsl(243,100%,13%) solid;
+  opacity: 0.05;
   flex: 1 1 auto;
 }
