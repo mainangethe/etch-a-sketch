@@ -45,7 +45,15 @@ pixelSelector.addEventListener('change', () => {
   console.log('event fired. New pixel size: ', defaultSize, eventFire);
   removeGrid();
   createGrid(defaultSize);
-  console.log('new grid created');
 });
+
+function createTrail(defaultSize, currentXPosition, currentYPosition) {
+
+}
+
+gridContainer.addEventListener('mousemove', event => {
+  event.target.classList.add('trail');
+});
+
 
 createGrid(getScreenPixelSize());
