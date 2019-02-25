@@ -10,12 +10,12 @@ const MULTI_COLOURS = [
   'hsl(343, 100%, 43%)',
 ];
 
-
 let eventFire = false;
 let defaultSize;
 let divsArray;
+
 function createGrid(gridSize) {
-  const gridBox = document.createElement('div');
+
   let screenWidth =  gridContainer.offsetWidth;
   let screenHeight = gridContainer.offsetHeight;
   let gridBoxCount = Math.floor((screenWidth * screenHeight) / (gridSize * gridSize));
