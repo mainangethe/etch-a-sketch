@@ -34,10 +34,18 @@ header p { font-size: 16px; }
 .grid-container {
   width: 480px; height: 300px;
   background-color: hsl(132, 11%, 64%);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
   position: relative;
-  left: 50%; transform: translateX(-50%);
   top: 10px;
+  left: 10px;
+  overflow: hidden;
+
 }
+
+
 .logo {
   position: absolute;
   left: 50%; transform: translateX(-50%);
@@ -102,6 +110,11 @@ header p { font-size: 16px; }
   width: 25px; height: 25px;
   background: hsl(12, 78%, 61%);
   cursor: pointer;
+}
+
+#pixel-output {
+  top: 150px;
+  left: 0;
 }
 
 /* Right Controls */
@@ -189,4 +202,12 @@ input:checked + .slider:before {
 }
 .slider.round:before {
   border-radius: 50%;
+}
+
+.grid-container > div {
+  border: .02px hsla(243,100%,13%,0.02) solid;
+  flex: 1 1 auto;
+}
+.trail {
+  background-color: hsl(180, 100%, 25%);
 }
